@@ -3,83 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grid-styles.css">
     <title>Grid Styles</title>
-    <style> 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: rgb(0, 0, 0);
-            color: #fff;
-        }
-
-        /* Grid container with visible grid lines */
-        .container {
-            display: grid;
-            gap: 10px;
-            padding: 30px;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
-            grid-template-rows: 200px 200px;
-            justify-items: center;
-            border: 2px dashed #888; /* Outer grid border */
-            position: relative;
-        }
-
-        /* Draw internal column lines */
-        .container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: calc(33.33% - 5px);
-            width: 2px;
-            background: red;
-        }
-
-        .container::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: calc(66.66% - 5px);
-            width: 2px;
-            background: red;
-        }
-
-        .item {
-            border: 2px solid yellow; /* Show each grid cell */
-            background-color: rgb(122, 122, 206);
-            padding: 10px;
-            border-radius: 8px;
-            width: 100%;
-            height: 100%;
-        }
-
-        .item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-    </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="item">
+        <div class="item" id="one">
             <img src="https://avatars.githubusercontent.com/u/165529918?s=400&u=87df8d41fd619fa81ae4b884fa80149639748487&v=4" alt="">
         </div>
-        <div class="item">
+        <div class="item" id="two">
             <img src="https://avatars.githubusercontent.com/u/165529918?s=400&u=87df8d41fd619fa81ae4b884fa80149639748487&v=4" alt="">
         </div>
-        <div class="item">
+        <div class="item" id="three">
             <img src="https://avatars.githubusercontent.com/u/165529918?s=400&u=87df8d41fd619fa81ae4b884fa80149639748487&v=4" alt="">
         </div>
-        <div class="item">
+        <div class="item" id="four">
             <img src="https://avatars.githubusercontent.com/u/165529918?s=400&u=87df8d41fd619fa81ae4b884fa80149639748487&v=4" alt="">
         </div>
     </div>
