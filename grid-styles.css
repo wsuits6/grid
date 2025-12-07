@@ -1,11 +1,32 @@
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        body {
-            background-color: rgb(255, 255, 255);
-            color: #fff;
-        }
+body {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px  5px black;
+}
+.item img{
+    width: 100px;
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 40px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 100px;
+}
